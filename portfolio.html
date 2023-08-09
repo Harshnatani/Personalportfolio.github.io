@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>
+            My Works
+        </title>
+        <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo"></img>
+                <ul>		
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+        </div>
+     <!-- ----------PORTFOLIO--------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images.jfif" >
+                    <div class="layer">
+                        <h2>Phone Tracker App</h2>
+                        <p>I will show you how to make this tool in Python with Tkinter. Tkinter comes with Python already, so there's nothing to install!  
+                            Tkinter is the standard GUI library for Python. Python when combined with Tkinter provides a fast and easy way to create GUI applications.</p>
+                            <a href="facedetection.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="download (1).jfif" >
+                    <div class="layer">
+                        <h2>Face detection</h2>
+                        <p>Face detection is a process of identifying human faces in images or videos. It is a rapidly expanding area of computer vision that offers a variety of useful applications, such as security systems, face identification, and picture analysis.</p>
+                        <a href="facedetection.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="4.png" alt="">
+                    <div class="layer">
+                        <h2>Portfolio design</h2>
+                        <p>A portfolio website is a unique way to showcase your work and let others know about yourself. It's like an evergreen platform for your projects, case studies, and information about you. In addition, it's one of the best ways to express your personality, experience, and capabilities.</p>
+                        <a href="facedetection.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="download.jfif" >
+                    <div class="layer">
+                        <h2>Weather Forecasting App</h2>
+                        <p>weather forecasting, Prediction of the weather through application of the principles of physics and meteorology. Weather forecasting predicts atmospheric phenomena and changes on the Earth's surface caused by atmospheric conditions (snow and ice cover, storm tides, floods, etc.).</p>
+                        <a href="weathercode.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                    <div class="work">
+                        <img src="download.png" >
+                        <div class="layer">
+                            <h2>QR code Generator</h2>
+                            <p>It is a niche tool that is used to generate different types of QR Codes. Depending on your purpose, you can use our generator to create QR Codes to open a website, view a PDF file, listen to music, watch Youtube videos, store image files, connect to a WiFi network, and much more.</p>
+                            <a href="qrcode.html"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                </div>
+                <div class="work">
+                    <img src="images.png" >
+                    <div class="layer">
+                        <h2>Bank Application using Java</h2>
+                        <p>The java program developed here is to implement bank functionality. The user can create an account, check, deposit money, withdraw, and also search account. At first, we created an interface called the central bank to do a few operations mentioned above.</p>
+                        <a href="qrcode.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+            </div>
+            </div>
+            
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+        // JavaScript for handling the mobile navigation menu
+        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        document.querySelector('.fas.fa-times').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.remove('show');
+        });
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>About me </title>
+        <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      
+            <div class="container">
+                <nav>
+                    <img src="logo.png" class="logo"></img>
+                    <ul>		
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <i class="fas fa-times"></i>
+                    </ul>
+                    <i class="fas fa-bars"></i>
+                </nav>
+            </div>
+        
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="photo.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>My name is Harsh Natani and i done my graduation in Bca from Rajasthan University now currently i am doing MCA from Poornima University and i have intermediate level knowldge about Frontend and Backend</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>HTML,CSS,Java Script</Script>pt</li>
+                                <li><span>Backend</span><br>Java,Python,C,C++</li>
+                                <li><span>Database Knowledge</span><br>Mysql</li>
+                                <li><span>Technical skills</span><br>Linux,Cloud Computing,Ansible,System Administrator</li>
+                                <li><span>Some basic Knowledge of</span><br>Artificial Intelligence,Machine learning,Data Science</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 - Current</span><br>GIP Technology Pvt ltd (Intern as System administrator)</li>
+                                    
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2017</span><br>Done 10th from Tagore Public School</li>
+                                <li><span>2019</span><br>Done 12th from Tagore Public School</li>
+                                <li><span>2022</span><br>Done BCA from Rajasthan Univrsity</li>
+                                <li><span>2023</span><br>Currently doing MCA from Poornima  Univrsity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var tabLinks = document.getElementsByClassName('tab-links');
+            var tabContents = document.getElementsByClassName('tab-contents');
+    
+            function openTab(tabName) {
+                for (tabLink of tabLinks) {
+                    tabLink.classList.remove('active-link');
+                }
+                for (tabContent of tabContents) {
+                    tabContent.classList.remove('active-tab');
+                }
+                event.currentTarget.classList.add('active-link');
+                document.getElementById(tabName).classList.add('active-tab');
+            }
+    
+            // JavaScript for handling the mobile navigation menu
+            document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+                document.querySelector('nav ul').classList.toggle('show');
+            });
+    
+            document.querySelector('.fas.fa-times').addEventListener('click', function () {
+                document.querySelector('nav ul').classList.remove('show');
+            });
+    
+        </script>
+    
+        
+    </body>
+    
+</html>

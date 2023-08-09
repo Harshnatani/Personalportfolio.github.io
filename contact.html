@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>
+            Contact me
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo"></img>
+                <ul>		
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i> harshnatani2000@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i> +918003326124</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                            
+                            <a href="https://www.instagram.com/the____natani/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/harsh-natani-563654251"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="Harsh Natani   10896.docx" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn3">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tabLinks = document.getElementsByClassName('tab-links');
+            var tabContents = document.getElementsByClassName('tab-contents');
+    
+            function openTab(tabName) {
+                for (tabLink of tabLinks) {
+                    tabLink.classList.remove('active-link');
+                }
+                for (tabContent of tabContents) {
+                    tabContent.classList.remove('active-tab');
+                }
+                event.currentTarget.classList.add('active-link');
+                document.getElementById(tabName).classList.add('active-tab');
+            }
+    
+            // JavaScript for handling the mobile navigation menu
+            document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+                document.querySelector('nav ul').classList.toggle('show');
+            });
+    
+            document.querySelector('.fas.fa-times').addEventListener('click', function () {
+                document.querySelector('nav ul').classList.remove('show');
+            });
+    
+        </script>
+    </body>
+</html>

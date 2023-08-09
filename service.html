@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>
+            My Services
+        </title>
+        <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo"></img>
+                <ul>		
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+        </div>
+          <!-- ----------SERVICES---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Software Development</h2>
+                    <p>Software development refers to a set of computer science activities dedicated to the process of creating, designing, deploying and supporting software. Software itself is the set of instructions or programs that tell a computer what to do. It is independent of hardware and makes computers programmable.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>A web developer is a programmer who develops World Wide Web applications using a client–server model. The applications typically use HTML, CSS, and JavaScript in the client, and any general-purpose programming language in the server. HTTP is used for communications between client and server.</p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Database Administrator</h2>
+                    <p>Database administrators ensure databases run efficiently. Database administrators and architects create or organize systems to store and secure a variety of data, such as financial information and customer shipping records.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>System Administrator</h2>
+                    <p>System administrators—also known as sysadmins—are information technology (IT) professionals who make sure an organisation's computer systems are functioning and meet the needs of the organisation. System administrators support, troubleshoot, and maintain computer servers and networks.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Data Scientist </h2>
+                    <p>A data scientist uses data to understand and explain the phenomena around them, and help organizations make better decisions. Working as a data scientist can be intellectually challenging, analytically satisfying, and put you at the forefront of new advances in technology.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Machine learner </h2>
+                    <p>Machine learning is an area of artificial intelligence and computer science that comprises supervised and unsupervised learning and includes the development of software and algorithms that can make predictions based on data.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+        // JavaScript for handling the mobile navigation menu
+        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        document.querySelector('.fas.fa-times').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.remove('show');
+        });
+
+    </script>
+    </body>
+</html>
